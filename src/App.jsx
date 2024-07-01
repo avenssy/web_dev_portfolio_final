@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import logo from '../public/Aven Logo 1.png';
 import myPicture from '../public/Grad Pic.JPG';
+import animatedProgrammer from '../public/Animated Programmer.gif';
 
 function App() {
   const [active, setActive] = useState(false);
@@ -85,7 +86,28 @@ function App() {
       </div>
       <div className='third-main-div'>
         <div className='third-sub-div'>
-
+          <div className='third-words-div'>
+            <p className='third-title-words'>Over the years,</p>
+            <p className='third-small-words'>I've built products for companies and businesses around the globe ranging from marketing websites to complex solutions and enterprise apps with focus on fast, elegant and accessible user experiences.</p>
+            <br></br>
+            <p className='third-small-words'>Currently, I work at Shopify as a Senior Frontend Engineer crafting thoughtful and inclusive experiences that adhere to web standards for over 3 million merchants across the world.</p>
+            <br></br>
+            <p className='third-small-words'>Before now, I was Principal Frontend Engineer at hellotax, where I worked on a suite of tools and services tailored towards automated VAT compliance for multi-channel sellers in Europe.</p>
+            <br></br>
+            <p className='third-small-words'>Prior to hellotax, I was Senior frontend engineering consultant with Pixel2HTML, building JavaScript applications and interfaces for orgs and individuals.</p>
+            <br></br>
+            <p className='third-small-words'>I once also led the frontend team at Conectar, an e-learning startup through building multiple React applications into a single robust learning platform.</p>
+          </div>
+          <div className='third-gif-programmer'>
+            <img src={animatedProgrammer}/> 
+          </div>
+        </div>
+      </div>
+      <div className='fourth-main-div'>
+        <div className='fourth-content-div'>
+          <p className='fourth-title-words'>I build & design stuff</p>
+          <p className='fourth-small-words'>Open source projects, web apps and experimentals.</p>
+          <button className='fourth-button'>See my work</button>
         </div>
       </div>
     </div>
