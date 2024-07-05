@@ -110,6 +110,30 @@ function App() {
           <button className='fourth-button'>See my work</button>
         </div>
       </div>
+      <div className='fifth-main-div'>
+        <p className='fifth-main-send'> Send me a message!</p>
+        <p className='fifth-smaller-words'>Got a question or proposal, or just want to say hello? Go ahead.</p>
+        <form className='fifth-user-div'>
+          <div className='fifth-main-input-div'>
+            <div className='fifth-input-div'>
+              <label className="fifth-label" for="name">Your Name</label>
+              <input className="fifth-input-margin" type="text" id='name' name="name" placeholder='Enter your name'></input>
+            </div>
+
+            <div className='fifth-input-div'>
+              <label className="fifth-label" for="email">Email Address</label>
+              <input className="fifth-input-margin" type="email" id='email' name="email" placeholder='Enter your email address'></input>
+            </div>
+          </div>
+
+          <div className='fifth-message-div'>
+            <label className="fifth-label" for="message">Your Message</label>
+            <input className="fifth-input-margin" type="text" id='message' name="message" placeholder='Hi! I think we need a website for our products at Company X. How soon can you hop on to discuss?'></input>
+          </div>
+
+          <input type="submit"></input>
+        </form>
+      </div>
     </div>
   );
 }

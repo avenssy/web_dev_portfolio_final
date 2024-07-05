@@ -305,6 +305,8 @@ path:nth-child(6) {
   letter-spacing: 0;
   line-height: 1em;
   margin: 30px 0 0 0;
+  display: flex;
+  justify-content: center;
   opacity: 1;
   outline: 0;
   padding: 1.5em 2.2em;
@@ -325,11 +327,15 @@ path:nth-child(6) {
 
 .fourth-button:before {
   animation: opacityFallbackOut .5s step-end forwards;
+  display: flex;
   backface-visibility: hidden;
   background-color: #4831d4;
   clip-path: polygon(-1% 0, 0 0, -25% 100%, -1% 100%);
-  content: "";
+  align-items: center;
+  justify-content: center;
+  content:"LET'S GO! :)";
   height: 100%;
+  font-size: 20px;
   left: 0;
   position: absolute;
   top: 0;
@@ -354,4 +360,57 @@ path:nth-child(6) {
 .fourth-button span {
   z-index: 1;
   position: relative;
+}
+
+.fifth-main-div {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  font-family: "Arimo", sans-serif;
+}
+
+.fifth-main-send {
+  color:#4831d4;
+  font-weight: 900;
+  font-size: xx-large;
+}
+
+.fifth-smaller-words {
+  margin: 20px 0px 20px 0px;
+  color:#64457F;
+}
+
+.fifth-user-div {
+  display: flex;
+  flex-direction: column;
+  color:#64457F;
+}
+
+.fifth-main-input-div {
+  display: flex;
+  flex-direction: row;
+}
+
+.fifth-input-div {
+  display: flex;
+  flex-direction: column;
+}
+
+.fifth-message-div {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.fifth-input-margin {
+  margin-top: 20px;
+}
+
+.fifth-label {
+  font-size: small;
 }
