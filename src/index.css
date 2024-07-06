@@ -7,6 +7,15 @@ html {
   scroll-snap-type: y mandatory;
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
+
+body {
+  overflow-x: hidden;
+}
+
 .main-div {
   height: 57vh;
   min-width: 581px;
@@ -381,8 +390,11 @@ path:nth-child(6) {
 }
 
 .fifth-smaller-words {
-  margin: 20px 0px 20px 0px;
+  margin: 20px 0px 70px 0px;
   color:#64457F;
+  font-size: larger;
+  width: 350px;
+  text-align: center;
 }
 
 .fifth-user-div {
@@ -394,11 +406,13 @@ path:nth-child(6) {
 .fifth-main-input-div {
   display: flex;
   flex-direction: row;
+  width: 700px;
 }
 
 .fifth-input-div {
   display: flex;
   flex-direction: column;
+  margin: 0px 30px 0px 30px;
 }
 
 .fifth-message-div {
@@ -413,4 +427,156 @@ path:nth-child(6) {
 
 .fifth-label {
   font-size: small;
+}
+
+.col-3 {
+  float: left; 
+  width: 100%; 
+  margin: 40px 3%; 
+  position: relative;
+}
+
+input[type="text"],
+input[type="email"] {
+  font: 15px/24px "Lato", Arial, sans-serif; 
+  color: #333; 
+  width: 100%; 
+  box-sizing: border-box; 
+  letter-spacing: 1px;
+}
+
+.effect-1 {
+  border: 0; 
+  padding: 7px 0; 
+  border-bottom: 1px solid #ccc;
+  outline: none;
+}
+
+.effect-1 ~ .focus-border { 
+  position: absolute; 
+  bottom: 0; 
+  left: 0; 
+  width: 0; 
+  height: 2px; 
+  background-color: #4831d4;
+  transition: 0.4s;
+}
+
+.effect-1:focus ~ .focus-border {
+  width: 100%; 
+  transition: 0.4s;
+}
+
+.fifth-submit-div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.fifth-button {
+  appearance: none;
+  background-color: #FFFFFF;
+  border-width: 2px;
+  box-sizing: border-box;
+  color: #4831d4;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Arimo", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  width: 300px;
+  letter-spacing: 0;
+  line-height: 1em;
+  margin: 30px 0 0 0;
+  display: flex;
+  justify-content: center;
+  opacity: 1;
+  outline: 0;
+  padding: 1.5em 2.2em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-rendering: geometricprecision;
+  text-transform: uppercase;
+  transition: opacity 300ms cubic-bezier(.694, 0, 0.335, 1),background-color 100ms cubic-bezier(.694, 0, 0.335, 1),color 100ms cubic-bezier(.694, 0, 0.335, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  white-space: nowrap;
+  border-style: solid;
+  border-color: #4831d4;
+}
+
+.fifth-button:before {
+  animation: opacityFallbackOut .5s step-end forwards;
+  display: flex;
+  backface-visibility: hidden;
+  background-color: #4831d4;
+  clip-path: polygon(-1% 0, 0 0, -25% 100%, -1% 100%);
+  align-items: center;
+  justify-content: center;
+  content:"SEND IT NOW!";
+  height: 100%;
+  font-size: 20px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transform: translateZ(0);
+  transition: clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1), -webkit-clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1);
+  width: 100%;
+}
+
+.fifth-button:hover {
+  color: #FFFFFF;
+}
+
+.fifth-button:hover:before {
+  animation: opacityFallbackIn 0s step-start forwards;
+  clip-path: polygon(0 0, 101% 0, 101% 101%, 0 101%);
+}
+
+.fifth-button:after {
+  background-color: #FFFFFF;
+}
+
+.sixth-main-div {
+  height: 50vh;
+  width: 100%;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  background-color: #3D155F;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font: 15px/24px "Lato", Arial, sans-serif; 
+  color:#b3d86d;
+}
+
+.sixth-links-div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 50px;
+  margin-left: 200px;
+}
+
+.sixth-links-words {
+  font-size: larger;
+  margin-top: 20px;
+  cursor: pointer;
+  width: 97px;
+}
+
+.sixth-footer-div {
+  width: 80%;
+  height: 80px;
+  box-shadow: 0 -1px 0 #b3d86d;
+  margin-top:100px;
+  padding: 20px;
+  font-size: larger;
+}
+
+.sixth-footer-words {
+  margin-right: auto;
 }

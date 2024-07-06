@@ -115,24 +115,40 @@ function App() {
         <p className='fifth-smaller-words'>Got a question or proposal, or just want to say hello? Go ahead.</p>
         <form className='fifth-user-div'>
           <div className='fifth-main-input-div'>
-            <div className='fifth-input-div'>
-              <label className="fifth-label" for="name">Your Name</label>
-              <input className="fifth-input-margin" type="text" id='name' name="name" placeholder='Enter your name'></input>
+
+            <div className="col-3">
+              <input className="effect-1" type="text" placeholder="Your Name"></input>
+                <span className="focus-border"></span>
             </div>
 
-            <div className='fifth-input-div'>
-              <label className="fifth-label" for="email">Email Address</label>
-              <input className="fifth-input-margin" type="email" id='email' name="email" placeholder='Enter your email address'></input>
+            <div className="col-3">
+              <input className="effect-1" type="email" placeholder="Email Address"></input>
+                <span className="focus-border"></span>
             </div>
+
           </div>
 
           <div className='fifth-message-div'>
-            <label className="fifth-label" for="message">Your Message</label>
-            <input className="fifth-input-margin" type="text" id='message' name="message" placeholder='Hi! I think we need a website for our products at Company X. How soon can you hop on to discuss?'></input>
+            <div className="col-3">
+              <input className="effect-1" type="text" placeholder="Your message here"></input>
+                <span className="focus-border"></span>
+            </div>
           </div>
 
-          <input type="submit"></input>
+          <div className='fifth-submit-div'>
+            <button className='fifth-button'>SUBMIT</button>
+          </div>
         </form>
+      </div>
+      <div className='sixth-main-div'>
+        <div className='sixth-links-div'>
+          <p className='sixth-links-words'>My Shelf</p>
+          <p className='sixth-links-words'>My Work</p>
+          <p className='sixth-links-words'>My Resume</p>
+        </div>
+        <div className='sixth-footer-div'>
+           <p className='sixth-footer-words'>© Aven Sy 2024</p>
+        </div>
       </div>
     </div>
   );
