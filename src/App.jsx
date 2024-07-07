@@ -3,9 +3,13 @@ import logo from '../public/Aven Logo 1.png';
 import myPicture from '../public/Grad Pic.JPG';
 import linkedIn from '../public/linkedin-icon.png';
 import gitHub from '../public/github-logo.png';
+import gears from '../public/moving-gears.gif';
+import drawingGuy from '../public/drawing-person.gif';
+import resume from '../public/AvenSy_FullStackDev_MERN_2023.pdf';
 import animatedProgrammer from '../public/Animated Programmer.gif';
 
 function App() {
+
   const [active, setActive] = useState(false);
 
   const handleClick = () => {
@@ -61,11 +65,11 @@ function App() {
         <div className='inner-content-primary'>
           <p className='full-stack-developer'>Full-Stack Developer.</p>
           <div>
-            <p className='main-smaller-words'>I like to craft solid and scalable frontend products with great user experiences.</p>
+            <p className='main-smaller-words'>I love to craft amazing websites with great user experiences.</p>
           </div>
           <div className='main-low-words'>
-            <p className='low-words'>Highly skilled at progressive enhancement, design systems & UI Engineering.</p>
-            <p className='low-words'>Proven experience building successful products for clients across several countries.</p>
+            <p className='low-words'>Highly eager to deepen knowledge in web development and progressive enhancement.</p>
+            <p className='low-words'>Dedicated individual in his work and output in any given task.</p>
           </div>
         </div>
         <div className='main-picture-div'>
@@ -78,8 +82,10 @@ function App() {
             <p className='second-title-word'>Design</p>
             <p className='second-small-words'>I'm probably not the typical designer positioned behind an Illustrator artboard adjusting pixels, but I design. Immersed in stylesheets tweaking font sizes and contemplating layouts is where you'll find me (~_^). I'm committed to creating fluent user experiences while staying fashionable.</p>
           </div>
+          <img src={gears} className='moving-gears-css'/>
         </div>
         <div className='second-sub-div-two'>
+          <img src={drawingGuy} className='drawing-guy-css'/>
           <div className='second-words-div-two'>
             <p className='second-title-word'>Engineering</p>
             <p className='second-small-words'>In building JavaScript applications, I'm equipped with just the right tools, and can absolutely function independently of them to deliver fast, resilient solutions optimized for scale — performance and scalabilty are priorities on my radar.</p>
@@ -89,16 +95,16 @@ function App() {
       <div className='third-main-div'>
         <div className='third-sub-div'>
           <div className='third-words-div'>
-            <p className='third-title-words'>Over the years,</p>
-            <p className='third-small-words'>I've built products for companies and businesses around the globe ranging from marketing websites to complex solutions and enterprise apps with focus on fast, elegant and accessible user experiences.</p>
+            <p className='third-title-words'>A little about me,</p>
+            <p className='third-small-words'>I have built websites to showcase my knowledge and passion in web development to show to possible employers in the future.</p>
             <br></br>
-            <p className='third-small-words'>Currently, I work at Shopify as a Senior Frontend Engineer crafting thoughtful and inclusive experiences that adhere to web standards for over 3 million merchants across the world.</p>
+            <p className='third-small-words'>Currently, I work at Accenture Philippines as an SAP software engineer utilizing ABAP to craft important applications and enhancements for technical users in 5 different countries.</p>
             <br></br>
-            <p className='third-small-words'>Before now, I was Principal Frontend Engineer at hellotax, where I worked on a suite of tools and services tailored towards automated VAT compliance for multi-channel sellers in Europe.</p>
+            <p className='third-small-words'>In this current role. I am exposed to communicate with both technical and nontechnical people in all 5 countries. I have learned how to explain the program with ease, where a nontechnical person can easily comprehend it, which I find very crucial in today's wild technical market.</p>
             <br></br>
-            <p className='third-small-words'>Prior to hellotax, I was Senior frontend engineering consultant with Pixel2HTML, building JavaScript applications and interfaces for orgs and individuals.</p>
+            <p className='third-small-words'>On March 2024, I graduated Uplift Code Camp, wherein we were exposed to the MERN stack, assigning us with projects which were reviewed by our mentors, who are professionals in the field.</p>
             <br></br>
-            <p className='third-small-words'>I once also led the frontend team at Conectar, an e-learning startup through building multiple React applications into a single robust learning platform.</p>
+            <p className='third-small-words'>Prior to web development, I was a licensed mechanical engineer, exposed to problems that required me to think critically and outside the box.</p>
           </div>
           <div className='third-gif-programmer'>
             <img src={animatedProgrammer}/> 
@@ -109,7 +115,7 @@ function App() {
         <div className='fourth-content-div'>
           <p className='fourth-title-words'>I build & design stuff</p>
           <p className='fourth-small-words'>Open source projects, web apps and experimentals.</p>
-          <button className='fourth-button'>See my work</button>
+          <a href="https://github.com/avenssy" className='no-text-decoration'><button className='fourth-button'>See my work</button></a>
         </div>
       </div>
       <div className='fifth-main-div'>
@@ -144,14 +150,14 @@ function App() {
       </div>
       <div className='sixth-main-div'>
         <div className='sixth-links-div'>
-          <p className='sixth-links-words'>My Shelf</p>
-          <p className='sixth-links-words'>My Work</p>
-          <p className='sixth-links-words'>My Resume</p>
+          <a className='sixth-links-words' href="https://www.linkedin.com/in/avenssy/"><p>My Shelf</p></a>
+          <a className='sixth-links-words' href="https://github.com/avenssy"><p>My Work</p></a>
+          <a className='sixth-links-words' href={resume}><p>My Resume</p></a>
         </div>
         <div className='sixth-footer-div'>
            <p className='sixth-footer-words'>© Aven Sy 2024</p>
-           <img src={linkedIn} className='sixth-link-images'/>
-           <img src={gitHub} className='sixth-link-images'/>
+           <a href="https://www.linkedin.com/in/avenssy/"><img src={linkedIn} className='sixth-link-images'/></a>
+           <a href="https://github.com/avenssy"><img src={gitHub} className='sixth-link-images'/></a>
         </div>
       </div>
     </div>
