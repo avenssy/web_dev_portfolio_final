@@ -575,8 +575,16 @@ input[type="email"] {
   margin-top:100px;
   padding: 20px;
   font-size: larger;
+  display: flex;
+  flex-direction: row;
 }
 
 .sixth-footer-words {
   margin-right: auto;
+}
+
+.sixth-link-images {
+  height: 30px;
+  margin-left: 20px;
+  cursor: pointer;
 }

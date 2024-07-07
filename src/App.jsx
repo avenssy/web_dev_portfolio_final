@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import logo from '../public/Aven Logo 1.png';
 import myPicture from '../public/Grad Pic.JPG';
+import linkedIn from '../public/linkedin-icon.png';
+import gitHub from '../public/github-logo.png';
 import animatedProgrammer from '../public/Animated Programmer.gif';
 
 function App() {
@@ -148,6 +150,8 @@ function App() {
         </div>
         <div className='sixth-footer-div'>
            <p className='sixth-footer-words'>© Aven Sy 2024</p>
+           <img src={linkedIn} className='sixth-link-images'/>
+           <img src={gitHub} className='sixth-link-images'/>
         </div>
       </div>
     </div>
