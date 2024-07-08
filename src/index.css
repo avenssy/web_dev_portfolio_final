@@ -652,3 +652,128 @@ div.slide-down p {
 .no-text-decoration {
   text-decoration: none;
 }
+
+@media screen and (min-width: 1000px) and (max-width: 1370px) {
+
+  .inner-content-primary {
+    height: 250px;
+    width: 100%;
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    margin-top: 9.12em;
+    margin-left: -80px;
+    padding: 0 10rem;
+    font-family: "Arimo", sans-serif;
+  }
+
+  .main-picture-div {
+    top: 17%;
+    width: 40em;
+    height: 45%;
+    right: -3.3em;
+    position: absolute;
+  }
+
+  .my-picture {
+    height: 280px;
+  }
+
+  .full-stack-developer {
+    color: #ccf381;
+    font-weight: 900;
+    font-size: 40px;
+    width: 500px;
+  }
+  
+  .main-smaller-words {
+    width: 350px;
+    margin-top: 20px;
+    color: #fff;
+    font-size: 1.3em;
+    line-height: 1.5;
+  }
+  
+  .main-low-words {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 50px;
+    height: 50px;
+    width: 450px;
+  }
+  
+  .low-words {
+    width: calc(50% - 1.031em);
+    font-size: 0.715em;
+    color: #ccf381;
+    line-height: 1.5;
+  }
+
+  .second-main-div {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: "Arimo", sans-serif;
+    background-color: #F9F9F9;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    scroll-behavior: smooth;
+    padding-top: 40px;
+  }
+  
+  .second-sub-div {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: -50px;
+  }
+  
+  .second-sub-div-two {
+    width: 100%;
+    display: flex;
+    justify-content:end;
+    margin-top: 50px;
+  }
+  
+  .moving-gears-css {
+    height: 150px;
+    margin-left: 270px;
+  }
+  
+  .drawing-guy-css {
+    height: 200px;
+    margin-right: 300px;
+  }
+  
+  .second-words-div {
+    color: #4831d4;
+    width: 400px;
+    margin-left: 205px;
+    line-height: 1.2em;
+  }
+  
+  .second-words-div-two {
+    color: #4831d4;
+    width: 500px;
+    margin-right: 105px;
+    line-height: 1.2em;
+    margin-top: 50px;
+  }
+  
+  .second-title-word {
+    font-size: 40px;
+    font-weight: 900;
+    margin-bottom: 25px;
+  }
+  
+  .second-small-words {
+    font-size: small;
+    color: #64457F;
+    line-height: 25px;
+    width: 500px;
+  }
+}
+
