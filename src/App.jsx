@@ -1,12 +1,10 @@
 import React, { useState } from 'react';
-import logo from '../public/Aven Logo 1.png';
-import myPicture from '../public/Grad Pic.JPG';
-import linkedIn from '../public/linkedin-icon.png';
-import gitHub from '../public/github-logo.png';
-import gears from '../public/moving-gears.gif';
-import drawingGuy from '../public/drawing-person.gif';
-import resume from '../public/AvenSy_FullStackDev_MERN_2023.pdf';
-import animatedProgrammer from '../public/Animated Programmer.gif';
+import logo from '/Aven Logo 1.png';
+import myPicture from '/Grad Pic.JPG';
+import linkedIn from '/linkedin-icon.png';
+import gitHub from '/github-logo.png';
+import resume from '/AvenSy_FullStackDev_MERN_2023.pdf';
+import animatedProgrammer from '/Animated Programmer.gif';
 
 function App() {
 
@@ -82,10 +80,8 @@ function App() {
             <p className='second-title-word'>Design</p>
             <p className='second-small-words'>I'm probably not the typical designer positioned behind an Illustrator artboard adjusting pixels, but I design. Immersed in stylesheets tweaking font sizes and contemplating layouts is where you'll find me (~_^). I'm committed to creating fluent user experiences while staying fashionable.</p>
           </div>
-          <img src={gears} className='moving-gears-css'/>
         </div>
         <div className='second-sub-div-two'>
-          <img src={drawingGuy} className='drawing-guy-css'/>
           <div className='second-words-div-two'>
             <p className='second-title-word'>Engineering</p>
             <p className='second-small-words'>In building JavaScript applications, I'm equipped with just the right tools, and can absolutely function independently of them to deliver fast, resilient solutions optimized for scale — performance and scalabilty are priorities on my radar.</p>
