@@ -200,16 +200,6 @@ path:nth-child(6) {
   margin-top: 80px;
 }
 
-.moving-gears-css {
-  height: 200px;
-  margin-left: 350px;
-}
-
-.drawing-guy-css {
-  height: 300px;
-  margin-right: 350px;
-}
-
 .second-words-div {
   color: #4831d4;
   width: 300px;
@@ -653,8 +643,7 @@ div.slide-down p {
   text-decoration: none;
 }
 
-@media screen and (min-height: 600px) and (max-height: 900px) {
-
+@media screen and (min-height: 400px) and (max-height: 900px) {
   .inner-content-primary {
     height: 250px;
     width: 100%;
@@ -738,16 +727,6 @@ div.slide-down p {
     margin-top: 50px;
   }
   
-  .moving-gears-css {
-    height: 150px;
-    margin-left: 270px;
-  }
-  
-  .drawing-guy-css {
-    height: 200px;
-    margin-right: 300px;
-  }
-  
   .second-words-div {
     color: #4831d4;
     width: 400px;
@@ -829,6 +808,185 @@ div.slide-down p {
 
   .sixth-main-div {
     height: 70vh;
+    width: 100%;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    background-color: #3D155F;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font: 15px/24px "Lato", Arial, sans-serif; 
+    color:#b3d86d;
+  }
+}
+
+/* Tablet Size @Media */
+@media screen and (min-width: 820px) and (max-width: 1198px) {
+  .inner-content-primary {
+    height: 250px;
+    width: 100%;
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    margin-top: 9.12em;
+    margin-left: -80px;
+    padding: 0 10rem;
+    font-family: "Arimo", sans-serif;
+  }
+
+  .main-picture-div {
+    top: 17%;
+    width: 40em;
+    height: 45%;
+    left: 25rem;
+    position: absolute;
+  }
+
+  .my-picture {
+    height: 280px;
+  }
+
+  .full-stack-developer {
+    color: #ccf381;
+    font-weight: 900;
+    font-size: 40px;
+    width: 300px;
+  }
+  
+  .main-smaller-words {
+    width: 250px;
+    margin-top: 20px;
+    color: #fff;
+    font-size: 1.3em;
+    line-height: 1.5;
+  }
+  
+  .main-low-words {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 50px;
+    height: 50px;
+    width: 450px;
+  }
+  
+  .low-words {
+    width: calc(50% - 1.031em);
+    font-size: 0.915em;
+    color: #ccf381;
+    line-height: 1.5;
+    margin-top: 10px;
+  }
+
+  .second-main-div {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: "Arimo", sans-serif;
+    background-color: #F9F9F9;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    scroll-behavior: smooth;
+    padding-top: 40px;
+  }
+  
+  .second-sub-div {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: -50px;
+  }
+  
+  .second-sub-div-two {
+    width: 100%;
+    display: flex;
+    justify-content:end;
+    margin-top: 50px;
+  }
+  
+  .second-words-div {
+    color: #4831d4;
+    width: 400px;
+    margin-left: 205px;
+    line-height: 1.2em;
+  }
+  
+  .second-words-div-two {
+    color: #4831d4;
+    width: 500px;
+    margin-right: 105px;
+    line-height: 1.2em;
+    margin-top: 200px;
+  }
+  
+  .second-title-word {
+    font-size: 60px;
+    font-weight: 900;
+    margin-bottom: 25px;
+  }
+  
+  .second-small-words {
+    font-size: large;
+    color: #64457F;
+    line-height: 25px;
+    width: 500px;
+  }
+
+  
+  .third-main-div {
+    background-color: #4831d4;
+    height: 100vh;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Arimo", sans-serif;
+  }
+
+  .third-sub-div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .third-words-div {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+  }
+
+  .third-title-words {
+    color:#ccf381;
+    font-size: 30px;
+    font-weight: 900;
+  }
+
+  .third-small-words {
+    color: #F9F9F9;
+    margin-top: 10px;
+    line-height: 1.45em;
+    font-size: small;
+  }
+
+  .third-gif-programmer {
+    display: flex;
+    height: 450px;
+    margin: 60px 0px 0px 200px;
+  }
+
+  .col-3 {
+    float: left; 
+    width: 100%; 
+    margin: 10px 3%; 
+    position: relative;
+  }  
+
+  .sixth-main-div {
+    height: 40vh;
     width: 100%;
     scroll-snap-align: start;
     scroll-snap-stop: always;
