@@ -103,7 +103,7 @@ function App() {
             <p className='third-small-words'>Prior to web development, I was a licensed mechanical engineer, exposed to problems that required me to think critically and outside the box.</p>
           </div>
           <div className='third-gif-programmer'>
-            <img src={animatedProgrammer}/> 
+            <img className='third-gif-programmer-img' src={animatedProgrammer}/> 
           </div>
         </div>
       </div>
