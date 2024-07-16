@@ -999,41 +999,69 @@ div.slide-down p {
   }
 }
 
-/* Smartphone Size @Media */
-@media screen and (min-width: 350px) and (max-width: 700px) {
+/*Small Tablet Size @Media */
+@media screen and (min-width: 701px) and (max-width: 810px) {
 
-  body {
-    overflow-x: hidden;
+  html {
+    min-width: 701px;
+    max-width: 810px;
   }
+
+  .header-div {
+    width: 53%;
+    display: flex;
+    z-index: 1000;
+    max-height: 12rem;
+    min-width: 300px;
+    -webkit-box-align: center;
+    align-items: center;
+    background: transparent;
+    justify-content: space-between;
+    font-size: 1rem;
+    height: 6.12em;
+    position: fixed;
+    padding-left: 4em;
+    padding-right: 6em;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    scroll-behavior: smooth;
+    }
   
+    .main-div {
+    height: 57vh;
+    min-width: 130px;
+    padding-bottom: 4.3rem;
+    background: linear-gradient(90deg, #4831d4 67%, #ccf381 33%);
+    }
+
   .inner-content-primary {
     height: 250px;
-    width: 100%;
+    width: 50%;
     display: flex;
     position: absolute;
     flex-direction: column;
     margin-top: 9.12em;
-    margin-left: -80px;
+    margin-left: -120px;
     padding: 0 10rem;
     font-family: "Arimo", sans-serif;
   }
 
   .main-picture-div {
     top: 17%;
-    width: 40em;
+    width: 20em;
     height: 45%;
-    left: 25rem;
+    left: 20rem;
     position: absolute;
   }
 
   .my-picture {
-    height: 280px;
+    height: 200px;
   }
 
   .full-stack-developer {
     color: #ccf381;
     font-weight: 900;
-    font-size: 40px;
+    font-size: 30px;
     width: 300px;
   }
   
@@ -1041,7 +1069,7 @@ div.slide-down p {
     width: 250px;
     margin-top: 20px;
     color: #fff;
-    font-size: 1.3em;
+    font-size: 1.em;
     line-height: 1.5;
   }
   
@@ -1049,7 +1077,7 @@ div.slide-down p {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-top: 50px;
+    margin-top: 20px;
     height: 50px;
     width: 450px;
   }
@@ -1080,11 +1108,223 @@ div.slide-down p {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    margin-left: -50px;
   }
   
   .second-sub-div-two {
     width: 100%;
+    display: flex;
+    justify-content:end;
+    margin-top: 50px;
+  }
+  
+  .second-words-div {
+    color: #4831d4;
+    width: 400px;
+    margin-left: 205px;
+    line-height: 1.2em;
+  }
+  
+  .second-words-div-two {
+    color: #4831d4;
+    width: 500px;
+    margin-right: 105px;
+    line-height: 1.2em;
+    margin-top: 200px;
+  }
+  
+  .second-title-word {
+    font-size: 60px;
+    font-weight: 900;
+    margin-bottom: 25px;
+  }
+  
+  .second-small-words {
+    font-size: large;
+    color: #64457F;
+    line-height: 25px;
+    width: 500px;
+  }
+
+  
+  .third-main-div {
+    background-color: #4831d4;
+    height: 100vh;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Arimo", sans-serif;
+  }
+
+  .third-sub-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .third-words-div {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+  }
+
+  .third-title-words {
+    color:#ccf381;
+    font-size: 30px;
+    font-weight: 900;
+  }
+
+  .third-small-words {
+    color: #F9F9F9;
+    margin-top: 10px;
+    line-height: 1.45em;
+    font-size: medium;
+  }
+
+  .third-gif-programmer {
+    height: 450px;
+    margin: 60px 200px 0px 200px;
+  }
+
+  .col-3 {
+    float: left; 
+    width: 100%; 
+    margin: 10px 3%; 
+    position: relative;
+  }  
+
+  .sixth-main-div {
+    height: 40vh;
+    width: 100%;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    background-color: #3D155F;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font: 15px/24px "Lato", Arial, sans-serif; 
+    color:#b3d86d;
+  }
+}
+
+/* Big Smartphone Size @Media */
+@media screen and (min-width: 430px) and (max-width: 700px) {
+
+  .main-logo {
+    height: 20px;
+    margin-left: -60px;
+  }
+
+  .header-div {
+  width: 88%;
+  display: flex;
+  z-index: 1000;
+  max-height: 12rem;
+  min-width: 300px;
+  -webkit-box-align: center;
+  align-items: center;
+  background: transparent;
+  justify-content: space-between;
+  font-size: 1rem;
+  height: 9.12em;
+  position: fixed;
+  padding-left: 6em;
+  padding-right: 6em;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  scroll-behavior: smooth;
+  }
+
+  .main-div {
+  height: 57vh;
+  min-width: 130px;
+  padding-bottom: 4.3rem;
+  background: linear-gradient(180deg, #4831d4 67%, #ccf381 33%);
+  }
+  
+  .inner-content-primary {
+    height: 250px;
+    width: 100%;
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    margin-top: 7.72em;
+    margin-left: -80px;
+    padding: 0 10rem;
+    font-family: "Arimo", sans-serif;
+  }
+
+  .main-picture-div {
+    top: 37%;
+    width: 10em;
+    height: 45%;
+    right:37%;
+    position: absolute;
+  }
+
+  .my-picture {
+    height: 200px;
+  }
+
+  .full-stack-developer {
+    color: #ccf381;
+    font-weight: 900;
+    font-size: 20px;
+    width: 300px;
+  }
+  
+  .main-smaller-words {
+    width: 250px;
+    margin-top: 20px;
+    color: #fff;
+    font-size: .8em;
+    line-height: 1.5;
+  }
+  
+  .main-low-words {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 20px;
+    height: 50px;
+    width: 450px;
+  }
+  
+  .low-words {
+    width: calc(50% - 1.031em);
+    font-size: 0.615em;
+    color: #ccf381;
+    line-height: 1.5;
+    margin-top: 10px;
+  }
+
+  .second-main-div {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: "Arimo", sans-serif;
+    background-color: #F9F9F9;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    scroll-behavior: smooth;
+    padding-top: 40px;
+  }
+  
+  .second-sub-div {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .second-sub-div-two {
+    width: 195%;
     display: flex;
     margin-top: 50px;
   }
@@ -1191,6 +1431,246 @@ div.slide-down p {
 
   .sixth-main-div {
     height: 50vh;
+    width: 100%;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    background-color: #3D155F;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font: 15px/24px "Lato", Arial, sans-serif; 
+    color:#b3d86d;
+  }
+
+  .sixth-links-div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 50px;
+    margin-left: 85px;
+  }
+}
+
+/* Normal Smartphone Size @Media */
+@media screen and (min-width: 350px) and (max-width: 429px) {
+
+  .main-logo {
+    height: 15px;
+    margin-left: -60px;
+  }
+
+  .header-div {
+  width: 88%;
+  display: flex;
+  z-index: 1000;
+  max-height: 12rem;
+  min-width: 300px;
+  -webkit-box-align: center;
+  align-items: center;
+  background: transparent;
+  justify-content: space-between;
+  font-size: 1rem;
+  height: 6.12em;
+  position: fixed;
+  padding-left: 6em;
+  padding-right: 6em;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  scroll-behavior: smooth;
+  }
+
+  .main-div {
+  height: 57vh;
+  min-width: 130px;
+  padding-bottom: 4.3rem;
+  background: linear-gradient(180deg, #4831d4 67%, #ccf381 33%);
+  }
+  
+  .inner-content-primary {
+    height: 250px;
+    width: 100%;
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    margin-top: 5.72em;
+    margin-left: -80px;
+    padding: 0 10rem;
+    font-family: "Arimo", sans-serif;
+  }
+
+  .main-picture-div {
+    top: 42%;
+    width: 10em;
+    height: 45%;
+    right:30%;
+    position: absolute;
+  }
+
+  .my-picture {
+    height: 150px;
+  }
+
+  .full-stack-developer {
+    color: #ccf381;
+    font-weight: 900;
+    font-size: 20px;
+    width: 300px;
+  }
+  
+  .main-smaller-words {
+    width: 250px;
+    margin-top: 20px;
+    color: #fff;
+    font-size: .8em;
+    line-height: 1.5;
+  }
+  
+  .main-low-words {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 20px;
+    height: 50px;
+    width: 450px;
+  }
+  
+  .low-words {
+    width: calc(50% - 1.031em);
+    font-size: 0.615em;
+    color: #ccf381;
+    line-height: 1.5;
+    margin-top: 10px;
+  }
+
+  .second-main-div {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: "Arimo", sans-serif;
+    background-color: #F9F9F9;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    scroll-behavior: smooth;
+    padding-top: 10px;
+  }
+  
+  .second-sub-div {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .second-sub-div-two {
+    width: 167%;
+    display: flex;
+    margin-top: -100px;
+  }
+  
+  .second-words-div {
+    color: #4831d4;
+    width: 400px;
+    line-height: 1.2em;
+  }
+  
+  .second-words-div-two {
+    color: #4831d4;
+    width: 500px;
+    line-height: 1.2em;
+    margin-top: 200px;
+  }
+  
+  .second-title-word {
+    font-size: 30px;
+    font-weight: 900;
+    margin-bottom: 25px;
+  }
+  
+  .second-small-words {
+    font-size:x-small;
+    color: #64457F;
+    line-height: 25px;
+    width: 300px;
+  }
+
+  
+  .third-main-div {
+    background-color: #4831d4;
+    height: 100vh;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Arimo", sans-serif;
+  }
+
+  .third-sub-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .third-words-div {
+    margin-top: 250px;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+  }
+
+  .third-title-words {
+    color:#ccf381;
+    font-size: 20px;
+    font-weight: 900;
+  }
+
+  .third-small-words {
+    color: #F9F9F9;
+    margin-top: 10px;
+    line-height: 1.45em;
+    font-size: x-small;
+  }
+
+  .third-gif-programmer {
+    height: 350px;
+    margin: 60px 200px 0px 200px;
+  }
+
+  .third-gif-programmer-img {
+    height: 200px;
+    margin-top: -50px;
+  }
+
+  .col-3 {
+    float: left; 
+    width: 100%; 
+    margin: 10px 3%; 
+    position: relative;
+  }  
+
+  .fourth-content-div {
+    height: 400px;
+    width: 350px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    padding: 30px;
+    box-sizing: border-box;
+  }
+
+  .fifth-main-input-div {
+    display: flex;
+    flex-direction: row;
+    width: 350px;
+  }
+
+  .sixth-main-div {
+    height: 70vh;
     width: 100%;
     scroll-snap-align: start;
     scroll-snap-stop: always;
