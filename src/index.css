@@ -1220,30 +1220,30 @@ div.slide-down p {
   }
 
   .header-div {
-  width: 88%;
-  display: flex;
-  z-index: 1000;
-  max-height: 12rem;
-  min-width: 300px;
-  -webkit-box-align: center;
-  align-items: center;
-  background: transparent;
-  justify-content: space-between;
-  font-size: 1rem;
-  height: 9.12em;
-  position: fixed;
-  padding-left: 6em;
-  padding-right: 6em;
-  scroll-snap-align: start;
-  scroll-snap-stop: always;
-  scroll-behavior: smooth;
+    width: 88%;
+    display: flex;
+    z-index: 1000;
+    max-height: 12rem;
+    min-width: 300px;
+    -webkit-box-align: center;
+    align-items: center;
+    background: transparent;
+    justify-content: space-between;
+    font-size: 1rem;
+    height: 9.12em;
+    position: fixed;
+    padding-left: 6em;
+    padding-right: 6em;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    scroll-behavior: smooth;
   }
 
   .main-div {
-  height: 57vh;
-  min-width: 130px;
-  padding-bottom: 4.3rem;
-  background: linear-gradient(180deg, #4831d4 67%, #ccf381 33%);
+    height: 57vh;
+    min-width: 130px;
+    padding-bottom: 4.3rem;
+    background: linear-gradient(180deg, #4831d4 67%, #ccf381 33%);
   }
   
   .inner-content-primary {
